@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
-
+echo "BEGIN: detect"
 if [[ -f $1/Package.swift ]]; then
   echo "Swift" && exit 0
 else
   echo "no" && exit 1
 fi
+echo "END  : detect"
