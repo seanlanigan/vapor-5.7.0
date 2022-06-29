@@ -23,12 +23,12 @@ source "$BIN_DIR/utils"
 
 if [ -f "$BUILD_DIR/.swift-version" ]; then
   SWIFT_VERSION=`cat $BUILD_DIR/.swift-version | tr -d '[[:space:]]'`
-  puts-step "Using Swift $SWIFT_VERSION (from .swift-version file)"
+  puts-step "ssssUsing Swift $SWIFT_VERSION (from .swift-version file)"
 elif [ -f "$ENV_DIR/SWIFT_VERSION" ]; then
   SWIFT_VERSION=`cat $ENV_DIR/SWIFT_VERSION | tr -d '[[:space:]]'`
-  puts-step "Using Swift $SWIFT_VERSION (from SWIFT_VERSION config)"
+  puts-step "wwwwUsing Swift $SWIFT_VERSION (from SWIFT_VERSION config)"
 else
-  puts-step "Using Swift $SWIFT_VERSION (default)"
+  puts-step "qqqqUsing Swift $SWIFT_VERSION (default)"
 fi
 
 if [ -f "$ENV_DIR/SWIFT_BUILD_CONFIGURATION" ]; then
