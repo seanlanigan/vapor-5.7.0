@@ -53,7 +53,7 @@ build_swift() {
 
   cd swift
   echo "Building Swift"
-  echo "This may take a very long time..."
+  echo "find me This may take a very long time..."
 
   ./utils/build-script -R -- --install-prefix="$destination" >&4 2>&1
   cd "$TMP"
